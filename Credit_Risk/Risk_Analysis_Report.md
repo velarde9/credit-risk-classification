@@ -1,8 +1,7 @@
 # Module 12 Report Template
 
-## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+## Overview of the Analysis
 
 ## Purpose
 The purpose of this analysis is to analyze the performance of the machine learning models used in this challenge. These models are compared against each other to determine which model is better at evaluating loan risk and identifying the creditworthiness of borrowers and to predict the loan status of these borrowers, between healthy loans and high-risk laons.
@@ -14,6 +13,7 @@ The dataset contains historical lending activity from a peer-to-peer lending ser
 The starter code notebook was used to read the lending_data.csv data from the Resources folder into a Pandas DataFrame. From here, the labels set (y) was created from the "loan_status" column and the features (X) dataframe was created with the remaining columns. The data was then split into training and testing datasets using train_test_split.
 
 The training and testing data were fit into a logistic regression model with random_state = 1. Two predictions were made, where the second prediction resampled the data using RandomOverSampler. The new prediction data was then fit into another logistic regression model and results in the classification reports were compared to the first model.
+
 
 ## Results
 
@@ -32,6 +32,7 @@ The training and testing data were fit into a logistic regression model with ran
   * Healthy Loans Recall score: 99%
   * High-Risk Loans Precision score: 84%
   * High-Risk Loans Recall score: 99%
+
 
 ## Summary
 
