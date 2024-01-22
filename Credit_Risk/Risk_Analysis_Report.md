@@ -6,10 +6,10 @@
 * Purpose:
     * The purpose of this analysis is to analyze the performance of the machine learning models used in this challenge. These models are compared against each other to determine which model is better at evaluating loan risk and identifying the creditworthiness of borrowers and to predict the loan status of these borrowers, between healthy loans and high-risk laons.
 
-* Dataset
+* Dataset:
     * The dataset contains historical lending activity from a peer-to-peer lending services company such as loan size, interest rate,	borrower income, debt to income, number of accounts, derogatory marks, total debt, and loan status. Overall, out of 77,536 borrowers, there were 75,036 healthy loans, and 2500 high-risk loans.
 
-* Method
+* Method:
     * The starter code notebook was used to read the lending_data.csv data from the Resources folder into a Pandas DataFrame. From here, the labels set (y) was created from the "loan_status" column and the features (X) dataframe was created with the remaining columns. The data was then split into training and testing datasets using train_test_split.
     * The training and testing data were fit into a logistic regression model with random_state = 1. Two predictions were made, where the second prediction resampled the data using RandomOverSampler. The new prediction data was then fit into another logistic regression model and results in the classification reports were compared to the first model.
 
